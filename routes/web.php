@@ -13,6 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('guest.home');
+// })->name('home');
+
+// ^ si fa passando da PageController creato da terminale con
+// php artisan make:controller NomeController
+
+
+Route::get('/', 'PageController@index')
+->name('home');
