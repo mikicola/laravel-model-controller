@@ -10,7 +10,7 @@
     <main>
         <h1>Film</h1>
         <div class="cards-movies">
-            {{-- @foreach ($movies as $movie)
+            @foreach ($movies as $movie)
             <div class="card-movie">
                 <ul>
                     <li>Titolo: {{ $movie->title }}</li>
@@ -20,7 +20,7 @@
                     <li>Voto: {{ $movie->vote }}</li>
                 </ul>
             </div>
-            @endforeach --}}
+            @endforeach
         </div>
     </main>
 @endsection
